@@ -1,0 +1,118 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Maven Pro', sans-serif;
+}
+.site {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	min-height: 600px;
+	background-image: url(../img/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.overley {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(-60deg, #88d3ce 0%, #6e45e2 100%);
+	opacity: 0.8;
+	z-index: 0;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	height: 10vh;
+	position: relative;
+	z-index: 2;
+}
+.menu {
+	width: 60%;
+}
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.menu-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+.get-started {
+	margin-left: 160px;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+.header-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.header-text span {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+}
+.header-text span::before {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+.header-text span::after {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 14px;
+}
+.header-text h1 {
+	margin: 0.7rem;
+	font-weight: 500;
+	font-size: 86px;
+}
+.header-btn {
+	position: relative;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+.arrow {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 55px;
+	box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+}
