@@ -295,7 +295,7 @@ button {
 }
 .footer-get-started {
 	margin-left: 16rem;
-	border: 1px solid #fff;
+	border: none;
 	background-color: #6e45e2;
 	color: #fff;
 	padding: 10px 20px;
@@ -324,4 +324,43 @@ button {
 }
 .social a:hover {
 	color: #6e45e2;
+}
+.m-menu-link {
+	display: none;
+	color: #fff;
+	font-size: 4rem;
+}
+.m-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	list-style-type: none;
+	font-size: 4rem;
+	line-height: 6rem;
+	background-color: #6e45e2;
+	z-index: 99;
+	transform: translateX(100%);
+	transition: 0.4s;
+}
+.m-menu__active {
+	transform: translateX(0%);
+}
+.close-menu {
+	position: fixed;
+	right: 5rem;
+	top: 0;
+	font-size: 5rem;
+	font-weight: 900;
+	color: #fff;
+}
+.close-menu:hover {
+	cursor: pointer;
 }
