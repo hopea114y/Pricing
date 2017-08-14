@@ -11,3 +11,9 @@ $(function() {
 		menu.toggleClass('m-menu__active');
 	})
 })
+
+$('.arrow').click(function(event) {
+	event.preventDefault();
+	var n = $(document).height();
+	$('html, body').animate({ scrollTop: 1000 }, 600);
+})
