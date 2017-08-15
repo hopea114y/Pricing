@@ -69,4 +69,7 @@
 		height: 6rem;
 		font-size: 1.5rem;
 	}
+	.top {
+		bottom: 25px;
+	}
 }
